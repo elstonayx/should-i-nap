@@ -10,12 +10,6 @@
 
 <svelte:head>
 	<title>Should I nap? 💤</title>
-	<link rel="icon" href="https://fav.farm/💤" />
-	<meta name="description" content="Should I nap? 💤" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="apple-mobile-web-app-title" content="Should I nap? 💤" />
 </svelte:head>
 
 <div
@@ -24,9 +18,9 @@
 		'[&>*]:col-start-2 [&>*]:row-start-2'
 	]}
 >
-	<Card className="bg-secondary-background w-[500px]">
+	<Card className="bg-secondary-background min-sm:w-[500px] w-80">
 		<CardHeader>
-			<CardTitle className="text-4xl font-bold">Should I nap? 💤</CardTitle>
+			<CardTitle className="text-3xl min-sm:text-4xl font-bold">Should I nap? 💤</CardTitle>
 		</CardHeader>
 		<CardContent>
 			<div class="flex flex-col gap-3">
@@ -44,9 +38,9 @@
 			</div>
 		</CardContent>
 		<CardFooter>
-			<CardAction>
-				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-					<Button size="lg">Should I nap?</Button>
+			<CardAction className="w-full">
+				<a href="/check">
+					<Button size="lg" className="w-full">Should I nap?</Button>
 				</a>
 			</CardAction>
 		</CardFooter>
